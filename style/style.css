@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "android";
+    src: url("../idroid.otf") format("opentype");
+}
+
+:root{
+    --color-1: #D1DEDE;
+    --color-3: #4392F1;
+    --color-2: #1D201F;
+
+    --font-android: "android";
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-1);
+}
+
+main h2,h3{
+    font-family: var(--font-android);
+    color: var(--color-3);
+    text-shadow: 1px 1px 1px black;
+}
+
+header,nav{ color: white;}
+
+header{
+    padding-top: 25px;
+    text-align: center;
+    background-image: linear-gradient(to bottom , var(--color-1),var(--color-3));
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header p{
+    margin: auto;
+    padding: 20px 10px;
+    max-width: 470px;
+}
+
+nav{
+    padding-left: 25px;
+    background-color: var(--color-3);
+    padding-bottom: 5px;
+}
+
+nav a{
+    border-radius: 0px 10px 0px 10px;
+    padding: 5px;
+    transition: .5s;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: var(--color-3);
+    background-color: var(--color-1);
+}
+
+
+main a,aside a{
+    color: var(--color-3);
+}
+
+a[rel=external]::after{
+    content: url("../icon/open_in_new.svg");
+}
+
+
+main{
+    background-color: white;
+    min-width: 320px;    
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+main p{
+    text-indent: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+main h3{
+    background-image: linear-gradient(to right, var(--color-1), transparent);
+}
+
+img{
+    display: block;
+}
+
+.image-full{
+    width: 100%;
+}
+
+.image-center{
+    display: block;
+    margin: auto;
+    max-width: 250px;
+}
+iframe{
+    width: 100%;
+    background-color: var(--color-3);
+    height: 500px;
+    padding: 20px 10px 20px 10px;
+    margin-left: -10px;
+    margin-bottom: -15px;
+}
+
+ul{
+    list-style: none;
+}
+
+aside{
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    max-width: 800px;
+}
+
+aside p{
+    text-indent: 25px;
+    padding: 10px 5px;
+}
+
+aside h2{
+    color: white;
+    background-color: var(--color-3);
+    padding: 10px;
+}
+
+aside ul{
+    columns: 2;
+    margin-left: 25px;
+}
+
+aside li::before{
+    content: "\2714";
+}
+
+aside section{
+    overflow-y: hidden;
+    border-radius: 10px;
+    background-color: var(--color-1);
+}
+
+
+footer{
+    background-color: var(--color-3);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
