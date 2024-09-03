@@ -1,16 +1,26 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @font-face {
-    font-family: "android";
+    font-family: "Android";
     src: url("../idroid.otf") format("opentype");
+    font-weight: normal;
 }
 
-:root{
-    --color-1: #D1DEDE;
-    --color-3: #4392F1;
-    --color-2: #1D201F;
 
-    --font-android: "android";
+
+
+:root{
+    --color-1: #c5ebd6;
+    --color-3: #83e1ad;
+    --color-2: #3ddc84;
+    --color-4: #2fa866;
+    --color-5: #1a5c37;
+
+    --font-destaque: "Bebas Neue", cursive;
+    --font-padrao: Arial,Verdana,Helvetica, sans-serif;
+    --font-android: "Android", cursive;
 }
 
 *{
@@ -19,7 +29,7 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-padrao);
     background-color: var(--color-1);
 }
 
@@ -29,12 +39,17 @@ main h2,h3{
     text-shadow: 1px 1px 1px black;
 }
 
-header,nav{ color: white;}
 
 header{
     padding-top: 25px;
     text-align: center;
-    background-image: linear-gradient(to bottom , var(--color-1),var(--color-3));
+    background-image: linear-gradient(to bottom , var(--color-1),var(--color-4));
+    color: white;
+}
+
+header > h1{
+    font-family: var(--font-destaque);
+    font-size: 3em;
 }
 
 a{
@@ -43,6 +58,7 @@ a{
 }
 
 header p{
+    font-size: 1.1em;
     margin: auto;
     padding: 20px 10px;
     max-width: 470px;
@@ -50,7 +66,7 @@ header p{
 
 nav{
     padding-left: 25px;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     padding-bottom: 5px;
 }
 
@@ -68,7 +84,7 @@ nav a:hover{
 
 
 main a,aside a{
-    color: var(--color-3);
+    color: var(--color-4);
 }
 
 a[rel=external]::after{
@@ -115,7 +131,7 @@ img{
 }
 iframe{
     width: 100%;
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     height: 500px;
     padding: 20px 10px 20px 10px;
     margin-left: -10px;
@@ -161,7 +177,7 @@ aside section{
 
 
 footer{
-    background-color: var(--color-3);
+    background-color: var(--color-4);
     text-align: center;
     color: white;
     padding: 10px;
