@@ -89,6 +89,11 @@ main p{
     margin-top: 10px;
     margin-bottom: 10px;
     text-transform: capitalize;
+    line-height: 25px;
+}
+
+strong{
+    color: var(--color-3);
 }
 
 main h3{
