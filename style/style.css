@@ -57,6 +57,10 @@ a{
     color: white;
 }
 
+#icon{
+    display: none;
+}
+
 header p{
     font-size: 1.1em;
     margin: auto;
